@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="black-style.css" id="themeCss">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="historyValues" id="memoryDiv">
+            <button class="history-div" onclick="back()">Back</button>
+            <p id="historyParagraph1"></p>
+            <p id="historyParagraph2"></p>
+        </div>
+        <div class="calc-container" id="container">
+            <div>
+                <button class="history-div" onclick="historyBtn()">HISTORY</button>
+            </div>
+            <div>
+                <input type="text" class="input" id="char" placeholder="0" disabled>
+            </div>
+            <div class="keys">
+                <button class="btn">
+                    <img src="images/ligth-mode.png" alt="#" width="38px" height="38px" onclick="ligthMode()">
+                </button>
+                <button class="btn">
+                    <img src="images/dark-mode.png" alt="" width="38px" height="38px" onclick="darkMode()">
+                </button>
+                <button class="btn">
+                    <img src="images/backspace-delete.png" alt="X" width="38px" height="38px" id="demo"
+                        onclick="lastIndexDelete()">
+                </button>
+                <button class="btn" onclick="button('/')">&divide;</button>
+
+            </div>
+            <div class="keys">
+                <button class="btn" onclick="button('7')">7</button>
+                <button class="btn" onclick="button('8')">8</button>
+                <button class="btn" onclick="button('9')">9</button>
+                <button class="btn" onclick="button('*')">&times;</button>
+            </div>
+            <div class="keys">
+                <button class="btn" onclick="button('4')">4</button>
+                <button class="btn" onclick="button('5')">5</button>
+                <button class="btn" onclick="button('6')">6</button>
+                <button class="btn" onclick="button('-')">&minus;</button>
+            </div>
+            <div class="keys">
+                <button class="btn" onclick="button('1')">1</button>
+                <button class="btn" onclick="button('2')">2</button>
+                <button class="btn" onclick="button('3')">3</button>
+                <button class="btn" onclick="button('+')">&plus;</button>
+            </div>
+            <div class="keys" style="margin-bottom: 20px;">
+                <button class="btn" onclick="restart()">&#x21BB;</button>
+                <button class="btn" onclick="button('0')">0</button>
+                <button class="btn" onclick="button('.')" style="padding-bottom: 23px;">.</button>
+                <button class="btn" onclick="answer()">&equals;</button>
+            </div>
+
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
